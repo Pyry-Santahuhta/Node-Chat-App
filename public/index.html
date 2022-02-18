@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sigmachat</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="client.js" defer></script>
+  </head>
+  <body>
+    <div id="chat">
+      <ul id="messages"></ul>
+      <p id="channel-info"></p>
+      <form id="form" action="">
+        <input
+          placeholder="Give a username for yourself :D"
+          id="input"
+          autocomplete="off"
+        /><button>Send</button>
+      </form>
+    </div>
+  </body>
+</html>

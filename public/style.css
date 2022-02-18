@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding-bottom: 3rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  background-image: url("rocks.jpg");
+
+  background-color: black;
+}
+
+#form {
+  background: rgba(0, 0, 0, 0.15);
+  padding: 0.25rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: 5rem;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+}
+#channel-info {
+  position: fixed;
+  bottom: 4rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  color: #efefef;
+  background-color: #333;
+  font-size: large;
+}
+#input {
+  border: none;
+  padding: 0 1rem;
+  flex-grow: 1;
+  border-radius: 2rem;
+  margin: 0.25rem;
+  font-size: 2rem;
+}
+#input:focus {
+  outline: none;
+}
+#form > button {
+  background: #333;
+  border: none;
+  width: 10%;
+  padding: 0 1rem;
+  margin: 0.25rem;
+  border-radius: 3px;
+  outline: none;
+  color: #ffff;
+}
+#messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#messages > li {
+  padding: 0.5rem 1rem;
+}
+
+.ownMessage {
+  position: relative;
+  left: 40%;
+  width: 50%;
+  text-align: right;
+}
+
+#messages > li {
+  background: #efefef;
+  margin: 5px;
+  margin-left: 3%;
+  width: 50%;
+  overflow: hidden;
+}
