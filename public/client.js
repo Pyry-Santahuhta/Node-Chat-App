@@ -1,4 +1,3 @@
-console.log("loaded boyo");
 const form = document.getElementById("form");
 const socket = io();
 const input = document.getElementById("input");
@@ -35,12 +34,24 @@ form.addEventListener("submit", function (e) {
 
 socket.on("chat message", function (msg) {
   const newMessage = document.createElement("li");
+
+  //Get current time, add leading 0's to time's so they look nice.
   const now = new Date();
-  const current = now.getHours() + ":" + now.getMinutes();
+  let HH = now.getHours();
+  let MM = now.getMinutes();
+  if (HH < 10) {
+    HH = "0" + HH;
+  }
+  if (MM < 10) {
+    MM = "0" + MM;
+  }
+  const current = HH + ":" + MM;
   if (msg.id === id) {
     newMessage.className = "ownMessage";
+  } else {
+    newMessage.className = "receivedMessage";
   }
-  newMessage.textContent = current + " " + msg.name + ": " + msg.text;
+  newMessage.textContent = msg.name + ": " + msg.text + "\n" + current;
   messages.appendChild(newMessage);
   window.scrollTo(0, document.body.scrollHeight);
 });
