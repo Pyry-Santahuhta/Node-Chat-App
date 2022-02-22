@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding-bottom: 3rem;
+  padding-bottom: 6.5rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif;
   background-image: url("rocks.jpg");
@@ -50,6 +50,7 @@ body {
   outline: none;
   color: #ffff;
 }
+
 #messages {
   list-style-type: none;
   margin: 0;
@@ -60,24 +61,18 @@ body {
   padding-bottom: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin-top: 3px;
-  margin-bottom: 3px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   overflow: hidden;
 }
 
 .ownMessage {
   border-radius: 25px;
   background: #a7cab1;
-  position: relative;
-  float: inline-end;
-  width: 90%;
   text-align: right;
 }
 
 .receivedMessage {
   border-radius: 25px;
   background: #f4ecd6;
-  float: inline-start;
-  position: relative;
-  width: 90%;
 }
