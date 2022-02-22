@@ -51,7 +51,7 @@ socket.on("chat message", function (msg) {
   } else {
     newMessage.className = "receivedMessage";
   }
-  newMessage.textContent = msg.name + ": " + msg.text + "\n" + current;
+  newMessage.innerHTML = msg.name + ": " + msg.text + "<br />" + current;
   messages.appendChild(newMessage);
   window.scrollTo(0, document.body.scrollHeight);
 });

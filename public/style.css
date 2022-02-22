@@ -56,25 +56,28 @@ body {
   padding: 0;
 }
 #messages > li {
-  padding: 0.5rem 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  overflow: hidden;
 }
 
 .ownMessage {
+  border-radius: 25px;
   background: #a7cab1;
   position: relative;
-  left: 45%;
-  margin-top: 5px;
-  width: 50%;
+  float: inline-end;
+  width: 90%;
   text-align: right;
 }
 
 .receivedMessage {
+  border-radius: 25px;
   background: #f4ecd6;
+  float: inline-start;
   position: relative;
-  margin-top: 5px;
-  left: 2%;
-  width: 50%;
-}
-#messages > li {
-  overflow: hidden;
+  width: 90%;
 }
